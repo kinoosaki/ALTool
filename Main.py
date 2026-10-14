@@ -30,7 +30,7 @@ class Main():
                 Config.save_config(config, 'config.json')
                 RequestAPI.Set_Access_Token()
                 refresh = RequestAPI.Check_Access_Token()
-        print('Notice: Anilist will rate limit often, so please be patient when using this program. (Most times it rate limites a specific feature so you should be able to use other features.)')
+        print('Notice: Anilist will rate limit often, so please be patient when using this program. (Most times it rate limits a specific feature so you should be able to use other features.)')
         while True:
             option = input("\n0. Exit\n1. Get Users Not Following Back\n2. Get Users You Are Not Following Back\n3. Follow Random Users From Global Activity Feed\nOption: ")
             if option == '0':
