@@ -1,0 +1,28 @@
+name: Build Windows executable
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python -m pip install requests pyinstaller
+
+      - name: Build executable
+        run: python -m PyInstaller --onefile --console --name altool Main.py
+
+      - name: Upload executable
+        uses: actions/upload-artifact@v7
+        with:
+          name: altool-windows
+          path: dist/altool.exe
+          if-no-files-found: error
+          retention-days: 14
