@@ -1,6 +1,8 @@
 # ALTool
 
-**DISCLAIMER:** This is a hard fork of the original project, I claim nothing. I don't know Python and hence much of the changes are being done by AI, I am not telling you to use it and I'm not claiming that the work is mine, it's purely for personal use. **Use at your own risk.**
+This was reverted to commit 3e6f88a which is what the latest release was built on in the upstream repository because further commits outright broke the script, so I reverted to something that works.
+
+**DISCLAIMER:** This is a hard fork of the original project, I claim nothing. It also looks like the original project has been discontinued. I don't know Python and hence much of the changes are being done by AI, I am not telling you to use it and I'm not claiming that the work is mine, it's purely for personal use. **Use at your own risk.**
 
 **Notice:** Program is compiled with pyinstaller so some anti-viruses may give false positives. For people who want to compile it themselves download the source files and run `Main.py`. There is a script that will install the necessary python modules in the source files and releases.
 
